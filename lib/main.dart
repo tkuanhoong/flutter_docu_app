@@ -6,8 +6,8 @@ void main() {
     MaterialApp(
       home: ShoppingList(
           products: [
-            Product(name: 'Eggs'),
             Product(name: 'Flour'),
+            Product(name: 'Eggs'),
             Product(name: 'Chocolate chips'),
           ],
         ),
