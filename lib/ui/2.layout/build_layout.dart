@@ -6,15 +6,15 @@ class BuildLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     Color primaryColor = Theme.of(context).primaryColor;
     Widget titleSection = Container(
-      padding: EdgeInsets.all(32),
+      padding: const EdgeInsets.all(32),
       child: Row(
         children: [
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8.0),
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 8.0),
                   child: Text(
                     'Oeschinen Lake Campground',
                     style: TextStyle(fontWeight: FontWeight.bold),
@@ -31,7 +31,7 @@ class BuildLayout extends StatelessWidget {
             Icons.star,
             color: Colors.red[500],
           ),
-          Text('41'),
+          const Text('41'),
         ],
       ),
     );

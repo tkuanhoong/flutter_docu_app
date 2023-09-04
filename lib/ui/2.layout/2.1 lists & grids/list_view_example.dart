@@ -14,18 +14,18 @@ class ListViewExample extends StatelessWidget {
         children: <Widget>[
           ListTile(
             onTap: () {},
-            leading: Icon(Icons.map),
-            title: Text('Map'),
+            leading: const Icon(Icons.map),
+            title: const Text('Map'),
           ),
           ListTile(
             onTap: () {},
-            leading: Icon(Icons.photo_album),
-            title: Text('Album'),
+            leading: const Icon(Icons.photo_album),
+            title: const Text('Album'),
           ),
           ListTile(
             onTap: () {},
-            leading: Icon(Icons.phone),
-            title: Text('Phone'),
+            leading: const Icon(Icons.phone),
+            title: const Text('Phone'),
           ),
         ],
       ),
