@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SilversExample extends StatelessWidget {
-  const SilversExample({super.key});
+class SliversExample extends StatelessWidget {
+  const SliversExample({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class SilversExample extends StatelessWidget {
     //   ),
     // );
 
-    //* How to fix it? - use Silvers
+    //* How to fix it? - use Slivers
 
     final outerListChildren = <SliverList>[
       SliverList(
@@ -65,7 +65,7 @@ class SilversExample extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text('Silvers'),
+        title: Text('Slivers'),
       ),
       body: CustomScrollView(
         slivers: outerListChildren,
