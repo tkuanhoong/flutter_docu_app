@@ -6,7 +6,7 @@ class SliversExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mockList = MockData.buildMockList(context);
+    final mockList = MockData.buildMockList(context, quantity: 100);
     //* Not recommend to use ShrinkWrap - big performance problem
     //* if one of those inner list contain lots of widgets, especially with animations,
     //* high risk of dropped frames, jank, stutters

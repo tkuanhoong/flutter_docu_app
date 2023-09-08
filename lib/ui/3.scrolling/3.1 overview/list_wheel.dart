@@ -6,7 +6,7 @@ class ListWheel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mockList = MockData.buildMockList(context);
+    final mockList = MockData.buildMockList(context, quantity: 100);
     return Scaffold(
       body: ListWheelScrollView(
         // item's height pixel

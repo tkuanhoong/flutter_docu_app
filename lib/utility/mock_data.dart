@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MockData {
-  static List<Widget> buildMockList(context) {
+  static List<Widget> buildMockList(context, {required int quantity}) {
     return List.generate(
-      100,
+      quantity,
       (index) => Container(
         width: MediaQuery.of(context).size.width * 0.8,
         padding: EdgeInsets.all(12),

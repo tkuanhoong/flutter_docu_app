@@ -6,7 +6,7 @@ class SliverAppBarVideo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mockList = MockData.buildMockList(context);
+    final mockList = MockData.buildMockList(context, quantity: 100);
 
     final sliverAppBar = SliverAppBar(
       title: const Text('SliverAppBar'),

@@ -6,7 +6,7 @@ class GridViewExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mockList = MockData.buildMockList(context);
+    final mockList = MockData.buildMockList(context, quantity: 100);
     Widget gridViewUsingExtent = GridView.extent(
         // Create a grid with not more than 220px width per column.
         // if greater than 220, it would become another column.
