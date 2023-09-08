@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_docu_app/utility/mock_data.dart';
 
 class GridViewExample extends StatelessWidget {
   const GridViewExample({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final mockList = List.generate(
-      100,
-      (index) => Center(
-        child: Text(
-          "title $index",
-          style: Theme.of(context).textTheme.headlineLarge,
-        ),
-      ),
-    );
+    final mockList = MockData.buildMockList(context);
     Widget gridViewUsingExtent = GridView.extent(
         // Create a grid with not more than 220px width per column.
         // if greater than 220, it would become another column.

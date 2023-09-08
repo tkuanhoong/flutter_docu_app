@@ -1,25 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_docu_app/utility/mock_data.dart';
 
 class SliversExample extends StatelessWidget {
   const SliversExample({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final mockList = List.generate(
-      10,
-      (index) => Container(
-        width: MediaQuery.of(context).size.width * 0.8,
-        padding: EdgeInsets.all(12),
-        decoration: BoxDecoration(
-            color: Colors.amber, borderRadius: BorderRadius.circular(12)),
-        child: Center(
-          child: Text(
-            "title $index",
-            style: Theme.of(context).textTheme.headlineLarge,
-          ),
-        ),
-      ),
-    );
+    final mockList = MockData.buildMockList(context);
     //* Not recommend to use ShrinkWrap - big performance problem
     //* if one of those inner list contain lots of widgets, especially with animations,
     //* high risk of dropped frames, jank, stutters
