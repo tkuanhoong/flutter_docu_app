@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_docu_app/ui/3.scrolling/3.2%20fancy_scolling/floating_app_bar.dart';
+import 'package:flutter_docu_app/ui/3.scrolling/3.2%20fancy_scolling/parallax_recipe.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: FloatingAppBar(),
+      debugShowCheckedModeBanner: false,
+      home: ParallaxRecipe(),
     );
   }
 }
