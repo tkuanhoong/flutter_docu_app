@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_docu_app/ui/3.scrolling/3.2%20fancy_scolling/parallax_recipe.dart';
+import 'package:flutter_docu_app/ui/2.layout/2.2%20scrolling/2.2.2%20fancy_scolling/parallax_recipe.dart';
 
 void main() {
   runApp(const MyApp());
