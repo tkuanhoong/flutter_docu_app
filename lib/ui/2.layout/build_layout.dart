@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_docu_app/ui/4.interactivity/favorite_widget.dart';
 
 class BuildLayout extends StatelessWidget {
   const BuildLayout({super.key});
@@ -27,11 +28,7 @@ class BuildLayout extends StatelessWidget {
               ],
             ),
           ),
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          const Text('41'),
+          const FavoriteWidget()
         ],
       ),
     );
