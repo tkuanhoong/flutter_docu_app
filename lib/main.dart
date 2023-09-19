@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_docu_app/theme/app_theme.dart';
-import 'package:flutter_docu_app/ui/2.layout/build_layout.dart';
+import 'package:flutter_docu_app/ui/4.interactivity/gestures/handle_tap.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const BuildLayout(),
+      home: const HandleTap(),
       // Create an app theme
       theme: ThemeData(
         useMaterial3: true,
