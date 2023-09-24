@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_docu_app/theme/app_theme.dart';
+import 'package:flutter_docu_app/ui/5.input&forms/retrieve_text_field_value.dart';
 import 'package:flutter_docu_app/ui/5.input&forms/styled_text_field.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const StyledTextField(),
+      home: const RetrieveTextFieldValue(),
       // Create an app theme
       theme: ThemeData(
           // useMaterial3: true,
