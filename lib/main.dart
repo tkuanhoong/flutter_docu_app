@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_docu_app/theme/app_theme.dart';
-import 'package:flutter_docu_app/ui/4.interactivity/material_touch_ripple.dart';
-import 'package:flutter_docu_app/ui/4.interactivity/swipe_to_dismiss.dart';
+import 'package:flutter_docu_app/ui/5.input&forms/styled_text_field.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SwipeToDismiss(),
+      home: const StyledTextField(),
       // Create an app theme
       theme: ThemeData(
           // useMaterial3: true,
