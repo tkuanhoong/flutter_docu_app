@@ -18,4 +18,7 @@ class MockData {
       ),
     );
   }
+
+  static final listItems =
+      List<String>.generate(20, (index) => 'Item ${index + 1}');
 }
